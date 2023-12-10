@@ -15,4 +15,9 @@ class Produk extends Model
         "harga",
         "stok",
     ];
+
+    public function getImageAttribute($image)
+    {
+        return asset('storage/produk/' . $image);
+    }
 }
